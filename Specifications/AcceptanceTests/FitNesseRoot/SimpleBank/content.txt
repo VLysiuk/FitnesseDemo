@@ -1,0 +1,14 @@
+!contents -R2 -g -p -f -h
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,bin\fitsharp.dll %p}
+!define TEST_RUNNER {bin\Runner.exe}
+
+!define COLLAPSE_SETUP {true}
+!define COLLAPSE_TEARDOWN {true}
+
+!path bin\SimpleBank.Specifications.dll
+
+!|import |
+|SimpleBank.Specifications.Fixtures|
+
+SetUp

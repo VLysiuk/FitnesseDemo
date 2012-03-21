@@ -1,0 +1,28 @@
+!3 Simple Bank transactions. Come and join us!
+
+When a user deposits money to the bank he might expect 10% interest per year. 
+Nevertheless to get an interest user has to put more then 999 money on his account.
+
+!|Set Up Test Environment|
+
+!|Register User|
+|username|password|name|address|phone number|user id?|
+|scrudge|money_money|Scrudge McDuck|Duck Tales|999999|$user=|
+
+
+!|Calculate Interest|scrudge|
+|User|scrudge|deposits|1000|money to his account|
+|check|show balance|1000|
+|show|last transaction time|
+|ensure|user|scrudge|can have interest|
+|show|user interest in one year|
+|check not|user interest in one year|<1000|
+
+If user decided to withdraw money back, bank takes 2% fee.
+
+!|Withdraw Money|
+|User|scrudge|deposits|1000|money to his account|
+|check|show balance|1000|
+|User|scrudge|withdraws|205|money from his account|
+|check|show balance|~=796|
+|show|last transaction time|

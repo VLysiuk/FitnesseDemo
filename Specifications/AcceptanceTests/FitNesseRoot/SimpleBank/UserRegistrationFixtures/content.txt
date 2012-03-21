@@ -1,0 +1,20 @@
+To become a bank client user needs to be registered in the system. Basic procedure requires username, pasword and general information.
+After registration user should have 0 on his current account, all details have to be stored in the system.
+
+!|Set Up Test Environment|
+
+!|Register User|
+|username|password|name|address|phone number|user id?|
+|johnsmith|test123|John Smith|London, UK|000111|$user=|
+|unclebob|tdd_rules|Robert C. Martin|USA|000222|$user1=|
+
+!|Check Stored Details|
+|user id|username?|name?|address?|phone number?|balance?|
+|$user|johnsmith|John Smith|London, UK|000111|0|
+|$user1|unclebob|Robert C. Martin|USA|000222|10|
+
+
+!|Check Log In|
+|username|password|can log in?|
+|johnsmith|test123|yes|
+|somebody|000|no|

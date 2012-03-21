@@ -1,0 +1,16 @@
+Client '''username''' must be unique. We cannot register two users with same '''username'''.
+When someone is trying to register '''username''' that already exists we should throw an exception.
+
+!|Set Up Test Environment|
+
+!|Register User|
+|username|password|name|address|phone number|user id?|error?|
+|batman|i_can_fly|Some Dude|Honolulu|007|$user=|no|
+|batman|i_can_swim|Other Dude|Ukraine|097|-1|Client with same username already exists|
+
+User cannot login to the system with an incorrect password.
+
+!|Check Log In|
+|username|password|can log in?|
+|batman|i_can_fly|yes|
+|batman|i_can_swim|no|

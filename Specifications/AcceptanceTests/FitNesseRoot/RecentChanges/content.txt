@@ -1,0 +1,7 @@
+|AcceptanceTests.BasicOperationsFixtures||08:13:17 вт, бер 20, 2012|
+|AcceptanceTests||24:00:21 вт, бер 20, 2012|
+|BasicOperationsFixtures||23:59:50 пн, бер 19, 2012|
+|AcceptanceTests.InvalidRegistrationFixtures||23:57:34 пн, бер 19, 2012|
+|AcceptanceTests.UserRegistrationFixtures||22:18:34 нд, бер 18, 2012|
+|SetUp||19:04:51 нд, бер 18, 2012|
+|UserRegistrationFixtures||18:44:05 нд, бер 18, 2012|
