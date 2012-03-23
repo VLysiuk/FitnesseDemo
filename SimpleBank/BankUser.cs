@@ -1,4 +1,6 @@
-﻿namespace SimpleBank
+﻿using System;
+
+namespace SimpleBank
 {
     public class BankUser
     {
@@ -8,5 +10,6 @@
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public decimal Balance { get; set; }
+        public DateTime LastTransactionTime { get; set; }
     }
 }

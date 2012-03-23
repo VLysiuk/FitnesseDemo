@@ -1,3 +1,4 @@
+|SimpleBank.BasicOperationsFixtures||08:24:08 пт, бер 23, 2012|
 |AcceptanceTests.BasicOperationsFixtures||08:13:17 вт, бер 20, 2012|
 |AcceptanceTests||24:00:21 вт, бер 20, 2012|
 |BasicOperationsFixtures||23:59:50 пн, бер 19, 2012|

@@ -5,24 +5,24 @@ Nevertheless to get an interest user has to put more then 999 money on his accou
 
 !|Set Up Test Environment|
 
-!|Register User|
-|username|password|name|address|phone number|user id?|
-|scrudge|money_money|Scrudge McDuck|Duck Tales|999999|$user=|
+!|Register User                                                      |
+|username|password   |name          |address   |phone number|user id?|
+|scrudge |money_money|Scrudge McDuck|Duck Tales|999999      |$user=  |
 
 
-!|Calculate Interest|scrudge|
-|User|scrudge|deposits|1000|money to his account|
-|check|show balance|1000|
-|show|last transaction time|
-|ensure|user|scrudge|can have interest|
-|show|user interest in one year|
-|check not|user interest in one year|<1000|
+!|script  |Calculate Interest|$user                                             |
+|User     |scrudge           |deposits|1000                |money to his account|
+|check    |show balance      |1000                                              |
+|show     |last transaction time                                                |
+|ensure   |user              |scrudge |can have interest                        |
+|show     |user              |scrudge |interest in one year                     |
+|check not|user              |scrudge |interest in one year|<100                |
 
 If user decided to withdraw money back, bank takes 2% fee.
 
-!|Withdraw Money|
-|User|scrudge|deposits|1000|money to his account|
-|check|show balance|1000|
-|User|scrudge|withdraws|205|money from his account|
-|check|show balance|~=796|
-|show|last transaction time|
+!|script|Withdraw Money|$user                                |
+|User   |scrudge       |deposits |1000|money to his account  |
+|check  |show balance  |1000                                 |
+|User   |scrudge       |withdraws|205 |money from his account|
+|check  |show balance  |~=791                                |
+|show   |last transaction time                               |
